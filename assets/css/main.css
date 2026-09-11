@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply bg-white text-slate-600 antialiased;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-blue-950 font-extrabold tracking-tight;
+  }
+  h1 {
+    @apply text-4xl md:text-5xl;
+    line-height: 1.2;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  p {
+    @apply leading-relaxed;
+  }
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    @apply outline-offset-4;
+  }
+  :focus-visible {
+    outline: 3px solid #2563eb;
+  }
+  select,
+  input,
+  textarea {
+    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700;
+  }
+  label {
+    @apply text-sm font-semibold text-slate-700;
+  }
+}
+@layer components {
+  .container-main {
+    @apply mx-auto w-full max-w-7xl px-5 md:px-8;
+  }
+  .section {
+    @apply py-16 md:py-20;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-blue-700;
+  }
+  .btn-light {
+    @apply bg-white text-blue-950 border border-slate-200 hover:bg-blue-50;
+  }
+  .eyebrow {
+    @apply mb-3 text-xs font-extrabold uppercase tracking-widest text-blue-600;
+  }
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  .badge {
+    @apply inline-flex rounded-md bg-blue-50 px-2.5 py-1 text-xs font-bold text-blue-700;
+  }
+  .grid-cards {
+    @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+  }
+  .filters {
+    @apply mb-8 grid gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5 md:grid-cols-3;
+  }
+  .empty {
+    @apply rounded-xl bg-slate-50 p-10 text-center;
+  }
+  .detail-grid {
+    @apply grid gap-8 lg:grid-cols-[1fr_340px];
+  }
+  .checklist {
+    @apply space-y-3;
+  }
+  .checklist li::before {
+    content: "✓";
+    @apply mr-3 font-bold text-blue-600;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.skip-link {
+  position: fixed;
+  left: 12px;
+  top: -80px;
+  z-index: 100;
+  background: white;
+  padding: 12px;
+}
+.skip-link:focus {
+  top: 12px;
+}
+.hero-grid {
+  background:
+    radial-gradient(ellipse at 75% 40%, #e0edff 0, transparent 55%), #f8faff;
+}
+.hero-art {
+  animation: rise 0.8s ease both;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+details[open] summary {
+  margin-bottom: 16px;
+  color: #2563eb;
+}
+summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #172554;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
