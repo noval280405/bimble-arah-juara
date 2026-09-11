@@ -9,7 +9,7 @@ watch(
 </script>
 <template>
   <header
-    class="sticky top-0 z-40 border-b border-slate-100 bg-white/95 backdrop-blur"
+    class="site-header sticky top-0 z-40 border-b border-slate-100 backdrop-blur-xl"
   >
     <nav
       class="container-main flex h-20 items-center justify-between gap-4"
@@ -30,9 +30,9 @@ watch(
           :key="path"
           :to="path!"
           :class="[
-            'text-xs font-semibold transition hover:text-blue-600',
+            'desktop-nav-link text-xs font-semibold transition hover:text-blue-600',
             (path === '/' ? route.path === '/' : route.path.startsWith(path!))
-              ? 'text-blue-600'
+              ? 'nav-selected text-blue-600'
               : 'text-slate-600',
           ]"
           >{{ name }}</NuxtLink

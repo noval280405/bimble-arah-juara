@@ -4,7 +4,7 @@ defineProps<{ tutor: Tutor }>();
 </script>
 <template>
   <article
-    class="overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-1 hover:shadow-lg"
+    class="tutor-profile overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-1 hover:shadow-lg"
   >
     <NuxtLink :to="'/tutor/' + tutor.slug"
       ><div class="overflow-hidden bg-blue-50">

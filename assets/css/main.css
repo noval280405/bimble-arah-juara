@@ -136,3 +136,377 @@ summary {
     scroll-behavior: auto !important;
   }
 }
+
+/* Arah Juara — contemporary learning identity */
+::selection {
+  background: #c7d2fe;
+  color: #172554;
+}
+body {
+  background: #fcfdff;
+}
+.btn {
+  border-radius: 14px;
+  box-shadow: 0 4px 12px #2563eb14;
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    box-shadow 0.2s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px #2563eb25;
+}
+.btn-light {
+  box-shadow: none;
+}
+.card {
+  border-color: #e6ebf3;
+  border-radius: 22px;
+  box-shadow: 0 3px 8px #17255403;
+}
+.card:hover {
+  border-color: #b9cbef;
+  box-shadow: 0 16px 40px -18px #17255440;
+}
+.badge {
+  border-radius: 7px;
+  font-size: 10px;
+  letter-spacing: 0.025em;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+}
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.65;
+}
+.filters {
+  background: linear-gradient(120deg, #f8faff, #f3f6fc);
+  border-radius: 20px;
+  border-color: #e3eaf5;
+  padding: 24px;
+}
+input,
+select,
+textarea {
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: #b8c9e7;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px #2563eb0c;
+}
+.hero-modern {
+  background: #0b1530;
+  color: #cbd5e1;
+}
+.hero-modern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(#ffffff03 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff03 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: linear-gradient(to right, transparent, #000);
+}
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(75px);
+}
+.hero-orb-one {
+  width: 450px;
+  height: 450px;
+  right: -80px;
+  top: -90px;
+  background: #2563eb30;
+}
+.hero-orb-two {
+  width: 300px;
+  height: 300px;
+  left: 35%;
+  bottom: -190px;
+  background: #6366f12a;
+}
+.hero-gradient {
+  background: linear-gradient(100deg, #9fbaff 0%, #a7c5ff 40%, #c8eaa6 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 1px solid #ffffff1c;
+  padding: 9px 12px;
+  border-radius: 99px;
+  color: #c6d5ef;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  background: #ffffff04;
+}
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background: #b9e887;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #b9e88770;
+}
+.hero-primary {
+  background: #c5f28f;
+  color: #142737;
+  box-shadow: 0 5px 25px #b9e88715;
+}
+.hero-primary:hover {
+  background: #d5f8ad;
+}
+.hero-secondary {
+  background: #ffffff05;
+  border: 1px solid #ffffff25;
+  color: white;
+  box-shadow: none;
+}
+.hero-secondary:hover {
+  background: #ffffff12;
+}
+.learning-composition {
+  position: relative;
+  padding: 0 8px 24px;
+  min-width: 0;
+}
+.learning-window {
+  background: #fff;
+  border: 1px solid #ffffff80;
+  border-radius: 24px;
+  box-shadow: 0 32px 100px #00000045;
+  transform: rotate(2deg);
+}
+.spark-symbol {
+  display: inline-block;
+  color: #2563eb;
+  font-size: 55px;
+  line-height: 1;
+}
+.floating-note {
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 18px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 14px 35px #00000022;
+  transform: rotate(-3deg);
+}
+.hero-finder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px 28px;
+  border: 1px solid #ffffff18;
+  border-radius: 20px;
+  background: #ffffff04;
+  backdrop-filter: blur(8px);
+}
+.level-chip {
+  border: 1px solid #ffffff20;
+  border-radius: 9px;
+  padding: 10px 13px;
+  color: #bdcbe2;
+  font-size: 11px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.level-chip:hover {
+  background: #ffffff12;
+  color: white;
+}
+.level-chip.is-selected {
+  background: #c5f28f;
+  color: #142737;
+  border-color: #c5f28f;
+}
+.page-intro {
+  position: relative;
+  overflow: hidden;
+  background: #eef3ff;
+}
+.page-intro::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  width: 350px;
+  height: 350px;
+  border: 55px solid #dbe5fc;
+  border-radius: 50%;
+  right: -90px;
+  top: -135px;
+  opacity: 0.7;
+}
+.page-intro h1 {
+  position: relative;
+  z-index: 1;
+  letter-spacing: -0.045em;
+}
+.site-header {
+  background: #ffffffed;
+  box-shadow: 0 2px 20px #17255405;
+}
+.desktop-nav-link {
+  padding: 8px 0;
+  position: relative;
+}
+.desktop-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: #2563eb;
+  transition: width 0.2s;
+}
+.desktop-nav-link:hover::after,
+.desktop-nav-link.nav-selected::after {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+@media (max-width: 639px) {
+  .hero-finder {
+    padding: 20px;
+    gap: 18px;
+  }
+  .learning-composition {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .floating-note {
+    left: 0;
+    padding: 12px;
+    gap: 8px;
+  }
+  .page-intro::after {
+    opacity: 0.3;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn:hover {
+    transform: none;
+  }
+}
+.program-card {
+  overflow: hidden;
+}
+.program-art {
+  position: relative;
+  min-height: 128px;
+  margin: -24px -24px 24px;
+  padding: 24px;
+  background: #edf2ff;
+  overflow: hidden;
+}
+.program-art > span:first-of-type + span {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  box-shadow: 0 5px 15px #17255408;
+}
+.program-art-decoration {
+  position: absolute;
+  right: 35px;
+  bottom: -32px;
+  font-size: 140px;
+  line-height: 1;
+  font-weight: 800;
+  color: #2563eb12;
+  transform: rotate(-15deg);
+}
+.program-card[data-level="SD"] .program-art {
+  background: #fff4de;
+}
+.program-card[data-level="SMA"] .program-art {
+  background: #eeecff;
+}
+.program-card[data-level="SMK"] .program-art {
+  background: #e5f5f2;
+}
+.program-card[data-level="Mahasiswa"] .program-art {
+  background: #edf6e8;
+}
+.program-card[data-level="Umum"] .program-art {
+  background: #f9edf1;
+}
+.level-card {
+  position: relative;
+  overflow: hidden;
+}
+.level-card::after {
+  content: "↗";
+  position: absolute;
+  right: 18px;
+  top: 22px;
+  color: #94a3b8;
+  font-size: 17px;
+  transition: transform 0.2s;
+}
+.level-card:hover::after {
+  transform: translate(2px, -2px);
+  color: #2563eb;
+}
+.level-card[data-level="sd"] > span {
+  background: #fff4de;
+  color: #a16207;
+}
+.level-card[data-level="sma"] > span {
+  background: #eeecff;
+  color: #7c3aed;
+}
+.level-card[data-level="mahasiswa"] > span {
+  background: #edf6e8;
+  color: #4d7c0f;
+}
+.level-card[data-level="umum"] > span {
+  background: #f9edf1;
+  color: #be185d;
+}
+.tutor-profile {
+  border-radius: 22px;
+  border-color: #e6ebf3;
+}
+.cta-modern {
+  background:
+    radial-gradient(ellipse at 100% 0%, #243968, transparent 65%), #0b1530;
+}

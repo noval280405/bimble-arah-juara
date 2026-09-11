@@ -3,8 +3,18 @@ import type { Program } from "~/data/programs";
 defineProps<{ program: Program }>();
 </script>
 <template>
-  <article class="card flex h-full flex-col">
-    <div class="mb-6 flex items-center justify-between">
+  <article
+    class="card program-card flex h-full flex-col"
+    :data-level="program.level"
+  >
+    <div class="program-art mb-6 flex items-center justify-between">
+      <span class="program-art-decoration" aria-hidden="true">{{
+        program.subject.includes("Matematika")
+          ? "∑"
+          : program.subject.includes("Inggris")
+            ? "Aa"
+            : "✳"
+      }}</span>
       <span
         class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-xl font-extrabold text-blue-600"
         >{{
@@ -14,7 +24,7 @@ defineProps<{ program: Program }>();
               ? "Aa"
               : "↗"
         }}</span
-      ><span class="badge">{{ program.level }}</span>
+      ><span class="badge relative z-10 !bg-white/80">{{ program.level }}</span>
     </div>
     <p
       class="mb-2 text-[10px] font-bold uppercase tracking-widest text-slate-400"

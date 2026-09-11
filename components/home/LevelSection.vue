@@ -40,7 +40,8 @@
         ]"
         :key="slug"
         :to="'/program/' + slug"
-        class="card !p-5"
+        class="card level-card !p-5"
+        :data-level="slug"
         ><span
           class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-xl text-blue-600"
           >{{ icon }}</span
